@@ -209,9 +209,9 @@ describe("Testing website sauce demo", () => {
         .find(".inventory_item_price")
         .invoke("text")
         .then((text) => {
-          cy.get("@prices").then((price) => {
+          cy.get("@prices").then((prices) => {
             const validPrice = Number(text.replace("$", ""));
-            price.push(validPrice);
+            prices.push(validPrice);
           });
         });
     });
