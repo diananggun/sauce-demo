@@ -21,14 +21,6 @@ class sauceDemoPage {
     return cy.get(".inventory_item");
   }
 
-  getButtonAddCart() {
-    return cy.get(".inventory_item").find('button:contains("Add to cart")');
-  }
-
-  getButtonRemove() {
-    return cy.get(".inventory_item").find('button:contains("Remove")');
-  }
-
   getShoppingCart() {
     return cy.get(".shopping_cart_link");
   }
@@ -39,10 +31,6 @@ class sauceDemoPage {
 
   getCartBadge() {
     return cy.get(".shopping_cart_badge");
-  }
-
-  getRemoveCartItem() {
-    return cy.get(".cart_item").find('button:contains("Remove")');
   }
 
   getMenu() {
